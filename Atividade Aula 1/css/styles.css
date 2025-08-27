@@ -15,6 +15,9 @@ body {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
+  align-items: center;
+  background-color: #6a5ba9;
+  padding: 40px;
 }
 
 header {
@@ -36,6 +39,33 @@ header {
 .mugshot img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
   border-radius: 50%;
+}
+
+.header-tittle {
+  font-size: 7rem;
+  font-weight: bold;
+  color: #333;
+  padding-left: 77px;
+  align-items: center;
+  margin: solid red 1px;
+}
+
+.header-nerv-logo {
+  height: auto;
+  width: 260px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: 0;
+  order: -1;
+}
+
+.header-nerv-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
