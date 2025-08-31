@@ -62,10 +62,18 @@ header {
   margin-left: auto;
   margin-right: 0;
   order: -1;
+  padding-right: 40px;
 }
 
 .header-nerv-logo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.informacoes-pessoais-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
 }
