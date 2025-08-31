@@ -5,145 +5,263 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículo Shinji Ikari</title>
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
+    <style>
+      .contact-wrapper {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+      }
+      .contact-info {
+        background: linear-gradient(135deg, #0062cc, #0096ff);
+        padding: 40px;
+        color: white;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        transition: all 0.3s ease;
+      }
+      .contact-item:hover {
+        transform: translateX(10px);
+      }
+      .contact-icon {
+        width: 40px;
+        height: 40px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+      }
+      .social-links {
+        margin-top: 30px;
+      }
+      .social-icon {
+        width: 35px;
+        height: 35px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+      }
+      .social-icon:hover {
+        background: white;
+        color: #0062cc;
+        transform: translateY(-3px);
+      }
+      .contact-form {
+        padding: 40px;
+      }
+      .form-control {
+        border-radius: 10px;
+        padding: 12px 15px;
+        border: 2px solid #eee;
+        transition: all 0.3s ease;
+      }
+      .form-control:focus {
+        border-color: #0062cc;
+        box-shadow: none;
+      }
+      .form-label {
+        font-weight: 500;
+        margin-bottom: 8px;
+      }
+      .btn-submit {
+        background: linear-gradient(135deg, #0062cc, #0096ff);
+        border: none;
+        padding: 12px 30px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+      }
+      .btn-submit:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0, 98, 204, 0.3);
+      }
+      .map-container {
+        height: 200px;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: 20px;
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <div class="header-container">
-        <h1 class="header-title">Shinji Ikari</h1>
-        <div class="mugshot">
-          <img
-            src="img/icon.webp"
-            alt="Foto de Shinji Ikari"
-            style="width: 120px; border-radius: 8px"
-          />
-        </div>
-        <div class="header-nerv-logo">
-          <img src="img/nerv-logo.png" alt="Logo da NERV" />
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="informacoes-pessoais-container">
-              <div class="informacoes">
-                <ul>
-                  <li>
-                    <p class="idade">Idade: <span>15</span></p>
-                  </li>
-                  <li>
-                    <p class="professao">
-                      Profissão: <span>Piloto de EVA</span>
-                    </p>
-                  </li>
-                  <li>
-                    <p class="naturalidade">
-                      Naturalidade: <span>Tóquio-3, Japão</span>
-                    </p>
-                  </li>
-                </ul>
-              </div>
-              <div class="informacoes-contato">
-                <ul>
-                  <li>Telefone <span>(11) 99999-0000</span></li>
-                  <li>
-                    Email:
-                    <span>
-                      <a
-                        href="mailto:shinji.ikari@nerv.jp"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >shinji.ikari@nerv.jp</a
-                      >
-                    </span>
-                  </li>
-                  <li>
-                    Linkedin:
-                    <span>
-                      <a
-                        href="https://www.linkedin.com/in/shinji-ikari"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >linkedin.com/in/shinji-ikari</a
-                      >
-                    </span>
-                  </li>
-                </ul>
-              </div>
-              <div class="endereco">
-                <ul>
-                  <li>
-                    <p>Endereço: <span>Rua NERV, 01, Tóquio-3, Japão</span></p>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 class="linguas-titulo">Línguas:</h2>
-                <ul class="linguas">
-                  <li><p class="linguas">Japonês (nativo)</p></li>
-                  <li><p class="linguas">Inglês (básico)</p></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div>
-              <h2 class="feito-titulos">Feitos:</h2>
-              <ul>
-                <li>
-                  <p class="feito1">
-                    Salvou Tóquio-3 de múltiplos ataques de Anjos
-                  </p>
-                </li>
-                <li><p class="feito2">Piloto mais jovem do EVA-01</p></li>
-                <li><p class="feito3">Sobreviveu ao Terceiro Impacto</p></li>
-                <li>
-                  <p class="feito4">
-                    Trabalho em equipe com outros pilotos de EVA
-                  </p>
-                </li>
-              </ul>
-              <div class="formacao">
-                <div class="formacao-container">
-                  <ul>
-                    <li>
-                      <h2 class="nome-graduacao">Ensino Médio</h2>
-                      <p class="nome-universidade">
-                        Colégio Municipal de Tóquio-3
+  <body class="bg-light">
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="contact-wrapper">
+            <div class="row g-0">
+              <div class="col-md-5">
+                <div class="contact-info h-100">
+                  <div class="text-center mb-4">
+                    <img
+                      src="img/icon.webp"
+                      alt="Foto de Shinji Ikari"
+                      style="
+                        width: 120px;
+                        border-radius: 8px;
+                        background: #fff;
+                        padding: 8px;
+                      "
+                    />
+                    <h2 class="mt-3 mb-1">Shinji Ikari</h2>
+                    <div style="height: 60px">
+                      <img
+                        src="img/nerv-logo.png"
+                        alt="Logo da NERV"
+                        style="max-height: 60px; max-width: 100%"
+                      />
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Idade</h6>
+                      <p class="mb-0">15</p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Profissão</h6>
+                      <p class="mb-0">Piloto de EVA</p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Endereço</h6>
+                      <p class="mb-0">Rua NERV, 01, Tóquio-3, Japão</p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Telefone</h6>
+                      <p class="mb-0">(11) 99999-0000</p>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Email</h6>
+                      <p class="mb-0">
+                        <a href="mailto:shinji.ikari@nerv.jp" class="text-white"
+                          >shinji.ikari@nerv.jp</a
+                        >
                       </p>
-                      <p>
-                        <span class="ano-inicial">2023</span> |
-                        <span class="ano-fim-previsao">2025 (previsão)</span>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">LinkedIn</h6>
+                      <p class="mb-0">
+                        <a
+                          href="https://www.linkedin.com/in/shinji-ikari"
+                          class="text-white"
+                          target="_blank"
+                          >linkedin.com/in/shinji-ikari</a
+                        >
                       </p>
-                    </li>
-                  </ul>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-icon">
+                      <i class="fas fa-language"></i>
+                    </div>
+                    <div>
+                      <h6 class="mb-0">Línguas</h6>
+                      <p class="mb-0">Japonês (nativo), Inglês (básico)</p>
+                    </div>
+                  </div>
+                  <div class="social-links">
+                    <h6 class="mb-3">Redes Sociais</h6>
+                    <a
+                      href="https://www.linkedin.com/in/shinji-ikari"
+                      class="social-icon"
+                      target="_blank"
+                      ><i class="fab fa-linkedin-in"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-              <div class="experiencias">
-                <ul>
-                  <li>
-                    <h2 class="cargo">Piloto de EVA-01</h2>
-                    <p class="empresa">NERV</p>
-                    <p>
-                      <span class="ano-inicial">2024</span> |
-                      <span class="ano-fim-previsao">Atual</span>
-                    </p>
-                  </li>
-                </ul>
+              <div class="col-md-7">
+                <div class="contact-form">
+                  <h3 class="mb-4">Feitos</h3>
+                  <ul class="list-group mb-4">
+                    <li class="list-group-item">
+                      Salvou Tóquio-3 de múltiplos ataques de Anjos
+                    </li>
+                    <li class="list-group-item">Piloto mais jovem do EVA-01</li>
+                    <li class="list-group-item">
+                      Sobreviveu ao Terceiro Impacto
+                    </li>
+                    <li class="list-group-item">
+                      Trabalho em equipe com outros pilotos de EVA
+                    </li>
+                  </ul>
+                  <h3 class="mb-4">Formação</h3>
+                  <ul class="list-group mb-4">
+                    <li class="list-group-item">
+                      <strong>Ensino Médio</strong><br />
+                      Colégio Municipal de Tóquio-3<br />
+                      <span>2023 - 2025 (previsão)</span>
+                    </li>
+                  </ul>
+                  <h3 class="mb-4">Experiência</h3>
+                  <ul class="list-group mb-4">
+                    <li class="list-group-item">
+                      <strong>Piloto de EVA-01</strong><br />
+                      NERV<br />
+                      <span>2024 - Atual</span>
+                    </li>
+                  </ul>
+                  <div class="map-container mt-4">
+                    <img
+                      src="img/nerv-logo.png"
+                      alt="Mapa"
+                      style="
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        background: #fff;
+                      "
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
