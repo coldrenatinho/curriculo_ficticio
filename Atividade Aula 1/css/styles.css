@@ -71,9 +71,14 @@ header {
   object-fit: cover;
 }
 
-.informacoes-pessoais-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
+ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+  padding-left: 5px;
+  border-left: 2px solid #6a5ba9;
+  padding-left: 10px;
 }

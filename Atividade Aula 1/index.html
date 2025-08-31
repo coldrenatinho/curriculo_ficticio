@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curriculo Shinji Ikari</title>
+    <title>Currículo Shinji Ikari</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
     <header>
       <div class="header-container">
-        <h1 class="header-tittle">Shiji Ikari</h1>
+        <h1 class="header-title">Shinji Ikari</h1>
         <div class="mugshot">
           <img
             src="img/icon.webp"
-            alt="Foto de Shiji Ikari"
+            alt="Foto de Shinji Ikari"
             style="width: 120px; border-radius: 8px"
           />
         </div>
@@ -24,104 +31,121 @@
       </div>
     </header>
     <main>
-      <div class="left-container">
-        <div class="informacoes-pessoais-container">
-          <div class="informacoes">
-            <ul>
-              <li>
-                <p class="idade">Idade: <span>15</span></p>
-            </li>
-            <li>
-              <p class="professao">Profissão: <span>Piloto de EVA</span></p>
-            </li>
-            <li>
-              <p class="naturalidade">
-                Naturalidade: <span>Tóquio-3, Japão</span>
-              </p>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="informacoes-pessoais-container">
+              <div class="informacoes">
+                <ul>
+                  <li>
+                    <p class="idade">Idade: <span>15</span></p>
+                  </li>
+                  <li>
+                    <p class="professao">
+                      Profissão: <span>Piloto de EVA</span>
+                    </p>
+                  </li>
+                  <li>
+                    <p class="naturalidade">
+                      Naturalidade: <span>Tóquio-3, Japão</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="informacoes-contato">
+                <ul>
+                  <li>Telefone <span>(11) 99999-0000</span></li>
+                  <li>
+                    Email:
+                    <span>
+                      <a
+                        href="mailto:shinji.ikari@nerv.jp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >shinji.ikari@nerv.jp</a
+                      >
+                    </span>
+                  </li>
+                  <li>
+                    Linkedin:
+                    <span>
+                      <a
+                        href="https://www.linkedin.com/in/shinji-ikari"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >linkedin.com/in/shinji-ikari</a
+                      >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="endereco">
+                <ul>
+                  <li>
+                    <p>Endereço: <span>Rua NERV, 01, Tóquio-3, Japão</span></p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h2 class="linguas-titulo">Línguas:</h2>
+                <ul class="linguas">
+                  <li><p class="linguas">Japonês (nativo)</p></li>
+                  <li><p class="linguas">Inglês (básico)</p></li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="informacoes-contato">
-          <ul>
-            <li>Telefone <span>(11) 99999-0000</span></li>
-            <li>
-              Email:
-              <span>
-                <a
-                  href="mailto:shinji.ikari@nerv.jp"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >shinji.ikari@nerv.jp</a
-                >
-              </span>
-            </li>
-            <li>
-              Linkedin:
-              <span>
-                <a
-                  href="https://www.linkedin.com/in/shinji-ikari"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >linkedin.com/in/shinji-ikari</a
-                >
-              </span>
-            </li>
-          </ul>
+        <div class="row">
+          <div class="col">
+            <div>
+              <h2 class="feito-titulos">Feitos:</h2>
+              <ul>
+                <li>
+                  <p class="feito1">
+                    Salvou Tóquio-3 de múltiplos ataques de Anjos
+                  </p>
+                </li>
+                <li><p class="feito2">Piloto mais jovem do EVA-01</p></li>
+                <li><p class="feito3">Sobreviveu ao Terceiro Impacto</p></li>
+                <li>
+                  <p class="feito4">
+                    Trabalho em equipe com outros pilotos de EVA
+                  </p>
+                </li>
+              </ul>
+              <div class="formacao">
+                <div class="formacao-container">
+                  <ul>
+                    <li>
+                      <h2 class="nome-graduacao">Ensino Médio</h2>
+                      <p class="nome-universidade">
+                        Colégio Municipal de Tóquio-3
+                      </p>
+                      <p>
+                        <span class="ano-inicial">2023</span> |
+                        <span class="ano-fim-previsao">2025 (previsão)</span>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="experiencias">
+                <ul>
+                  <li>
+                    <h2 class="cargo">Piloto de EVA-01</h2>
+                    <p class="empresa">NERV</p>
+                    <p>
+                      <span class="ano-inicial">2024</span> |
+                      <span class="ano-fim-previsao">Atual</span>
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-    <div class="endereco">
-      <ul>
-        <li>
-          <p>Endereço: <span>Rua NERV, 01, Tóquio-3, Japão</span></p>
-        </li>
-      </ul>
-    </div>
-    <div>
-      <h2 class="liguas-titulo">Linguas:</h2>
-      <ul class="linguas">
-        <li><p class="linguas">Japonês (nativo)</p></li>
-        <li><p class="linguas">Inglês (básico)</p></li>
-      </ul>
-    </div>
-    <div>
-    </div>
-        </div>
-    </div>
-      <h2 class="feito-titulos">Feitos:</h2>
-      <ul>
-        <li>
-          <p class="feito1">Salvou Tóquio-3 de múltiplos ataques de Anjos</p>
-        </li>
-        <li><p class="feito2">Piloto mais jovem do EVA-01</p></li>
-        <li><p class="feito3">Sobreviveu ao Terceiro Impacto</p></li>
-        <li>
-          <p class="feito4">Trabalho em equipe com outros pilotos de EVA</p>
-        </li>
-      </ul>
-    <div class="formacao">
-      <div class="formacao-container">
-        <ul>
-          <li>
-            <h2 class="nome-graduacao">Ensino Médio</h2>
-            <p class="nome-universidade">Colégio Municipal de Tóquio-3</p>
-            <p>
-              <span class="ano-inicial">2023</span> |
-              <span class="ano-fim-previsao">2025 (previsão)</span>
-            </p>
-          </li>
-        </ul>
       </div>
-    </div>
-    <div class="experiencias">
-      <ul>
-        <li>
-          <h2 class="cargo">Piloto de EVA-01</h2>
-          <p class="empresa">NERV</p>
-          <p>
-            <span class="ano-inicial">2024</span> |
-            <span class="ano-fim-previsao">Atual</span>
-          </p>
-        </li>
-      </ul>
-    </div>
+    </main>
   </body>
 </html>
